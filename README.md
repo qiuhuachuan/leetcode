@@ -28,12 +28,11 @@ You can return the answer in any order.
 # 代码
 
 ```python
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        obj = {}
-        for [index, value] in enumerate(nums):
-            another = target - value
-            if another in obj:
-                return [obj[another], index]
-            obj[value] = index
+def twoSum(self, nums: List[int], target: int) -> List[int]:
+    obj = {}
+    for idx, value in enumerate(nums):
+        another = target - value
+        if another in obj:
+            return [obj[another], idx]
+        obj[value] = idx
 ```
