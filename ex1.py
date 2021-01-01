@@ -7,11 +7,11 @@ from typing import List
 class Solution:
     def two_sum(self, nums: List[int], target: int) -> List[int]:
         obj = {}
-        for idx, element in enumerate(nums):
-            another = target - element
+        for idx, value in enumerate(nums):
+            another = target - value
             if another in obj:
                 return [obj[another], idx]
-            obj[element] = idx
+            obj[value] = idx
 
 def main():
     '''
